@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "VT323", sans-serif;
+  background: lightblue;
+}
+
+h1 {
+  font-family: "Bungee Shade", sans-serif;
+  font-size: 3em;
+  margin-top: -1em;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  border: 2px solid darkslategray;
+  border-radius: 5%;
+  background-color: slategray;
+  padding: 5px;
+}
+
+#screen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80%;
+  height: 20px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: darkgreen;
+  border: 3px solid darkslategray;
+  color: yellow;
+}
+
+button {
+  font-size: 1.5em;
+  border-radius: 5%/10%;
+  font-family: "VT323";
+}
+
+#num-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#num-buttons > * {
+  flex-basis: 30%;
+  margin: 1.5%;
+  height: 50px;
+}
+
+#op-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.op-button {
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
