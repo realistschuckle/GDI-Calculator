@@ -15,12 +15,14 @@ function clearScreen(){
 }
 
 function clickNum(e){
-  const numClicked = e.target.innerHTML
+  // const numClicked = e.target.innerHTML
+  const numClicked = e.target.dataset.symbol
   addToScreen(numClicked)
 }
 
 function clickOp(e){
-  const opClicked = e.target.innerHTML
+  // const opClicked = e.target.innerHTML
+  const opClicked = e.target.dataset.symbol
   addToScreen(" " + opClicked + " ")
 }
 
